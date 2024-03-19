@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Market Predictor</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Fish Market Predictor</h1>
+    <form id="fishForm">
+        <!-- Add input fields for relevant features -->
+        <!-- For example, Length1, Length2, Length3, Height, Width -->
+        <label for="length1">Length 1:</label>
+        <input type="number" id="length1" name="length1" required><br><br>
+        <!-- Add other input fields similarly -->
+
+        <button type="button" onclick="predict()">Predict</button>
+    </form>
+    <p id="prediction"></p>
+
+    <script>
+        function predict() {
+            // Fetch user inputs
+            const length1 = parseFloat(document.getElementById('length1').value);
+            // Fetch other inputs similarly
+
+            // Make a request to your model hosted on Heroku
+            // Display the prediction in the "prediction" paragraph
+        }
+    </script>
+</body>
+</html>
